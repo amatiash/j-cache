@@ -1,8 +1,35 @@
 {
   "name": "j-cache",
-  "version": "1.0.0",
-  "main": "j-cache.js",
+  "version": "1.0.1",
+  "main": "dist/j-cache.js",
+  "description": "Add $window, $document, $doc and $body to the global scope",
+  "scripts": {
+    "start": "webpack",
+    "build": "rm -rf dist && NODE_ENV=production webpack -p"
+  },
+  "keywords": [
+    "jquery",
+    "window",
+    "global",
+    "document",
+    "doc",
+    "body",
+    "cache"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amatiash/j-cache.git"
+  },
+  "github": "https://github.com/amatiash/j-cache",
+  "license": "MIT",
   "dependencies": {
     "jquery": "x.x.x"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "webpack": "^3.11.0",
+    "webpack-node-externals": "^1.7.2",
+    "babel-preset-env": "^1.7.0"
   }
 }

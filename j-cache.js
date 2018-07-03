@@ -28,7 +28,7 @@ descriptor.get = () =>{
     return $body;
 };
 
-Object.defineProperty(window, '$body', descriptor);
+window.$body || Object.defineProperty(window, '$body', descriptor);
 
 // ----------------------------------------------------
 
